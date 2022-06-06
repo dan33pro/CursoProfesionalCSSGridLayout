@@ -1,0 +1,178 @@
+:root {
+    --skin: #f6c09c;
+    --dark-skin: #ca9e80;
+    --background: #ed4042;
+    --red: #ed2860;
+    --dark-red: #680524;
+    --black: #00243a;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--background);
+}
+
+.head {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    background: var(--skin);
+    border-radius: 50px;
+    z-index: 3;
+}
+
+.top {
+    position: relative;
+    margin: 40% auto 0;
+    justify-content: center;
+    width: 80%;
+    height: 25px;
+    background: var(--skin);
+}
+
+.ceja {
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 100%;
+    height: 10px;
+    background: var(--skin);
+    z-index: 2;
+}
+
+.eye-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 47%;
+    width: 25px;
+    height: 25px;
+    background: var(--white);
+    border-radius: 50%;
+    z-index: 1;
+}
+.eye-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 47%;
+    width: 25px;
+    height: 25px;
+    background: var(--white);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.pupila {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--black);
+}
+
+.oreja-left {
+    position: relative;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--dark-skin);
+    z-index: 2;
+}
+
+.oreja-right {
+    position: relative;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--dark-skin);
+    z-index: 2;
+}
+
+.barba {
+    position: relative;
+    margin: 8px 0 0;
+    width: 100%;
+    height: 75%;
+    background: var(--black);
+    border-radius: 25% 25% 50% 50%;
+    overflow: hidden;
+    z-index: 3;
+}
+
+.nariz {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: var(--skin);
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    z-index: 3;
+}
+
+.labio {
+    position: absolute;
+    width: 90%;
+    height: 20px;
+    top: 5px;
+    background: var(--black);
+    z-index: 2;
+}
+
+.boca {
+    position: absolute;
+    transform: translate(-50%, 5%);
+    left: 50%;
+    width: 45px;
+    height: 45px;
+    background: var(--dark-red);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.027);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.dientes { 
+    position: absolute;
+    top: 22px;
+    width: 75%;
+    height: 9px;
+    background: var(--white);
+    border-bottom-right-radius: 5px;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
+}
+
+.lengua {
+    position: absolute;
+    top: 35px;
+    left: 3px;
+    width: 50%;
+    height: 10px;
+    background: var(--red);
+    border-top-right-radius: 5px;
+}
+
+.cuello {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 60%;
+    height: 40px;
+    background: var(--dark-skin);
+}
